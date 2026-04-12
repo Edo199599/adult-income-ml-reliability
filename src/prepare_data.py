@@ -1,5 +1,5 @@
 import pandas as pd
-from src.config import RAW_DATA_PATH, COLUMN_NAMES, TARGET_COL, PROCESSED_DATA_PATH
+from src.config import RAW_DATA_PATH, TARGET_COL, PROCESSED_DATA_PATH
 
 
 def load_raw_data():

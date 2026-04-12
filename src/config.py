@@ -24,6 +24,8 @@ COLUMN_NAMES = [
 ]
 
 TARGET_COL = "income"
+CATEGORICAL_COLUMNS = ["workclass", "education", "marital_status", "occupation", "relationship", "race", "sex", "native_country"]
+NUMERICAL_COLUMNS = ["age", "fnlwgt", "education_num", "capital_gain", "capital_loss", "hours_per_week"]
 
 RANDOM_STATE = 42
 TEST_SIZE = 0.2
