@@ -40,11 +40,12 @@ def main():
     df = load_raw_data()
     df = standardize_column_names(df)
     df = clean_raw_dataframe(df)
-    print(df[TARGET_COL].unique())
+    #print(df[TARGET_COL].unique())
     df = encode_target(df)
+    save_processed_data(df)
 
-    print(df.shape)
-    print(df.head(2))
+    #print(df.shape)
+    #print(df.head(2))
 
 
 if __name__ == "__main__":
