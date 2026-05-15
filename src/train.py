@@ -40,10 +40,10 @@ def build_training_pipeline():
 
 def main():
     X_train, X_test, y_train, _ = load_data()
-    print(X_train.shape)
-    print(X_test.shape)
+
     pipe = build_training_pipeline()
     pipe.fit(X_train, y_train)
+
     return pipe
 
 

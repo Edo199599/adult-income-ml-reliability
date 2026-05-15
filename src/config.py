@@ -8,7 +8,7 @@ PROCESSED_DATA_PATH = PROJECT_ROOT / "data" / "processed" / "adult_clean.csv"
 COLUMN_NAMES = [
     "age",
     "workclass",
-    "fnlwgt",
+    "fnlwgt",           # final weight - peso campionario legato a quante persone della società quel record rappresenta
     "education",
     "education_num",
     "marital_status",
@@ -23,9 +23,10 @@ COLUMN_NAMES = [
     "income",
 ]
 
-TARGET_COL = "income"
+
 CATEGORICAL_COLUMNS = ["workclass", "education", "marital_status", "occupation", "relationship", "race", "sex", "native_country"]
 NUMERICAL_COLUMNS = ["age", "fnlwgt", "education_num", "capital_gain", "capital_loss", "hours_per_week"]
+TARGET_COL = "income"
 
 RANDOM_STATE = 42
 TEST_SIZE = 0.2
